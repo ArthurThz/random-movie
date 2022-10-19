@@ -1,0 +1,99 @@
+/* Atribui a fonte para todos os elementos */
+body,
+button,
+p,
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* div inicial que será retirada com o clique do botão */
+.disabled {
+    display: none;
+}
+
+/* Div que agrupa todos os elementos */
+.container {
+    background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Titulo e paragráfos */
+.container h1,
+p {
+
+    color: #fffcf9;
+}
+
+/* Ícone do botão */
+.container button img {
+    width: 25px;
+    height: 30px;
+}
+
+/* Propriedades do botão */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    box-shadow: #c12b23c2 0px 5px 15px;
+}
+
+/* Título da página */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Div dos elementos do filme - banner - título - ano de lançamento */
+.movie-content {
+
+    height: 60%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Título do filme */
+.movie-content h2 {
+    font-size: 25px;
+    color: #fffcf9;
+}
+
+/* Ano de lançamento e sinopse */
+.movie-content p {
+    font-size: 18px;
+    color: #b3b3b3;
+}
+
+/* Div que contém as informações dos filmes */
+.movie-description {
+    width: 70%;
+    padding: 5px 15px;
+    text-align: justify;
+    overflow: auto;
+}
+
+.movie-description::-webkit-scrollbar {
+    width: 8px;
+}
